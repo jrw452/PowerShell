@@ -6,5 +6,4 @@ Foreach ($DC in $Dcs) {
     $DC.Enabled = $Check.ScavengingState
     $Check = $null
 }
-
 $DCs | Export-Csv -NoTypeInformation ".\AllDCsChecked.csv"
